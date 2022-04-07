@@ -31,16 +31,10 @@ class Trading extends Engine.Scene {
         }
 
         this.engine.show(JSON.stringify({
-<<<<<<< HEAD
             stonks: this.stonks,
             cash: this.cash,
             money: this.money,
             price: this.price
-=======
-            stonks: this.stonks + " STONK",
-            cash: "$" + this.cash.toFixed(2),
-            price: "$" + this.price.toFixed(2)
->>>>>>> aab7f662b84505e1595068363dc209fab040a73e
         }, null, 1));
     }
 
@@ -55,22 +49,17 @@ class Trading extends Engine.Scene {
             this.cash += this.price;
         }
 
-<<<<<<< HEAD
         if(action == "money") {
             this.cash += 500;
         }
 
         if(this.cash > 2000) {
             this.engine.show('Cash > $2k, noice!');
-=======
-        if (this.cash > 2000) {
->>>>>>> aab7f662b84505e1595068363dc209fab040a73e
             this.engine.gotoScene(Victory);
         }
     }
 }
 
-<<<<<<< HEAD
 class Introduction extends Engine.Scene {
     setup() {
         this.engine.setTitle("Stonks 4.0");
@@ -83,8 +72,6 @@ class Introduction extends Engine.Scene {
     }
 }
 
-=======
->>>>>>> aab7f662b84505e1595068363dc209fab040a73e
 class Victory extends Engine.Scene {
     setup() {
         this.engine.setTitle("Victory");
